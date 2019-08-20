@@ -11,12 +11,12 @@ if __name__ == '__main__':
 
     listener = tf.TransformListener()
 
-    obj_pose_pub = rospy.Publisher('/obj_pose', Pose, queue_size=1)
+    obj_pose_pub = rospy.Publisher('/object_pose', Pose, queue_size=1)
 
     rate = rospy.Rate(30.0)
     while not rospy.is_shutdown():
         try:
-            (trans, rot) = listener.lookupTransform('/camera', '/tag_4', rospy.Time(0))
+            (trans, rot) = listener.lookupTransform('/origin', '/object', rospy.Time(0))
             pose_msg = Pose()
 
             pose_msg.position.x = trans[0]
