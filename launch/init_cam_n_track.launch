@@ -39,4 +39,7 @@
         <param name="publish_tag_detections_image" type="bool" value="true" />      <!-- default: false -->
     </node>
 
+    <node pkg="object_tracker" name="obj_pose_pub" type="obj_pose_pub.py" output="screen">
+    </node>
+
 </launch>
