@@ -45,7 +45,7 @@
 
     <!-- Set parameters for finding the config files -->
     <rosparam command="load" file="$(find object_tracker)/config/settings.yaml" ns="$(arg node_namespace1)" />
-    <rosparam command="load" file="$(find object_tracker)/config/tags1.yaml" ns="$(arg node_namespace1)" />
+    <rosparam command="load" file="$(find object_tracker)/config/block_tags1.yaml" ns="$(arg node_namespace1)" />
 
     <!-- Here we run the april tag node  -->
     <node pkg="apriltag_ros" type="apriltag_ros_continuous_node" name="$(arg node_namespace1)"
@@ -59,7 +59,7 @@
     </node>
 
     <rosparam command="load" file="$(find object_tracker)/config/settings.yaml" ns="$(arg node_namespace2)" />
-    <rosparam command="load" file="$(find object_tracker)/config/tags2.yaml" ns="$(arg node_namespace2)" />
+    <rosparam command="load" file="$(find object_tracker)/config/block_tags2.yaml" ns="$(arg node_namespace2)" />
 
     <node pkg="apriltag_ros" type="apriltag_ros_continuous_node" name="$(arg node_namespace2)"
                 clear_params="true" output="screen" launch-prefix="$(arg launch_prefix)" >
