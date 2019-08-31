@@ -49,7 +49,7 @@ standalone_tags:
 tag_bundles:
   [
    {
-      name: 'origin1',
+      name: 'origin2',
       layout:
         [
           {id: 0, size: 0.0464, x: 0.0000, y: 0.0000, z: 0.0000, qw: 1.0000, qx: 0.0000, qy: 0.0000, qz: 0.0000},
@@ -57,7 +57,7 @@ tag_bundles:
         ]
     },
     {
-      name: 'object1',
+      name: 'object2',
       layout:
         [
           {id: 3, size: 0.03, x: 0.0000, y: 0.0000, z: 0.0000, qw: 1.0000, qx: 0.0000, qy: 0.0000, qz: 0.0000},
