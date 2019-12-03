@@ -26,7 +26,7 @@
 
     <!-- Set parameters for finding the config files -->
     <rosparam command="load" file="$(find object_tracker)/config/settings.yaml" ns="$(arg node_namespace)" />
-    <rosparam command="load" file="$(find object_tracker)/config/block_tags1.yaml" ns="$(arg node_namespace)" />
+    <rosparam command="load" file="$(find object_tracker)/config/soft_block_bundle.yaml" ns="$(arg node_namespace)" />
 
     <!-- Here we run the april tag node  -->
     <node pkg="apriltag_ros" type="apriltag_ros_continuous_node" name="$(arg node_namespace)"
